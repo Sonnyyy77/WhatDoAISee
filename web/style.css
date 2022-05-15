@@ -1,0 +1,35 @@
+.strokes {
+  margin: 10px;
+}
+body{
+  background-color: rgb(45, 43, 46);
+}
+.character {
+  /* text-align: center; */
+}
+p{
+  display: inline;
+  color: lightgray;
+}
+img{
+  width: 7%;
+  height: 7%;
+}
+#sentence{
+  display: flex;
+  font-size: 30px;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  /* max-width: 90%; */
+}
+.in{
+  position: fixed;
+  top: 250px;
+  left: 45%;
+  text-align: center;
+}
+input{
+  /* margin: auto; */
+  text-align: center;
+}

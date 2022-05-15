@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What Do (AI) See</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="bgImage">
+    </div>
+
+    <div class="header">
+      <h1 style="margin:10px; font-style:italic; font-weight:bold;">What Do (AI) See</h1>
+      <p style="margin:10px">How AI Perceives Chinese Characters That Uses Handwriting Input Methods</p>
+    </div>
+
+    <div class="intro">
+      <p>One of the most common input methods for writing Chinese on a phone is to use a finger to handwrite the characters. <span style='font-size:25px; font-style:italic; font-weight:bold;'>What Do (AI) See</span> is a collection of this handwritten input alongside AI’s predictive output. The project is based on a database, compiling stroke compositions that the AI recognizes as existing Chinese characters, despite the irregularity of stroke combinations. It explores a new form of writing that is being invented by a human-machine collaboration.</p>
+    </div>
+
+    <div class="process1">
+      <!-- <iframe id="pro1vid" src="https://player.vimeo.com/video/678543393?h=66e70316a9" width="768" height="432" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+      <!-- <iframe id="pro1vid" src="https://player.vimeo.com/video/678543393?h=66e70316a9" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+      <iframe id="pro1vid" src="https://player.vimeo.com/video/710069141?h=967142c600&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <!-- <p><a href="https://vimeo.com/678543393">Capstone_Progress_1</a> from <a href="https://vimeo.com/user166990218">Sonnyyy</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+      <div class="des1">
+        <p>The first step I took was to ask a number of people to write the same message using iPhone's handwriting input method, and recorded their writing process. When putting their writing processes together for comparison, it's easy to discover that each person has different writing habits and the handwriting input method gives different guesses to their handwritten characters.</p>
+      </div>
+    </div>
+
+    <div class="process2">
+      <iframe id="pro2vid" src="https://player.vimeo.com/video/710088285?h=ebbacbf317&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe id="pro2vid" src="https://player.vimeo.com/video/680548747?h=ed104a653d" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+      <!-- <p><a href="https://vimeo.com/680548747">Capstone_Progress_2</a> from <a href="https://vimeo.com/user166990218">Sonnyyy</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+      <div class="des2">
+        <p>At the second step, I focused on how the AI of the handwriting input method gives different guesses as the stroke changes when one writes a particular character. In the process of completing a character, the unfinished combinations of strokes are also recognized by the AI as different characters.</p>
+      </div>
+    </div>
+
+    <div class="process3">
+      <img src="pro3_img1.png" id="pro3img1">
+      <img src="pro3_img2.jpg" id="pro3img2">
+    </div>
+
+    <div class="des3">
+      <p>After collecting the process of handwriting different contents from more people, I started to work on the recorded videos, extracting each moment when the AI made the recognition and analyzing it as individual cases.</p>
+    </div>
+
+    <div class="process4">
+      <img src="pro4_img1.png" id="pro4img1">
+      <img src="pro4_img2.png" id="pro4img2">
+    </div>
+
+    <div class="des4">
+      <p>Afterwards, I used Python to assemble the captured images into folders, using the AI-recognized character as the folder name, with each folder containing both the handwritten part of the image and the first guess of character that the AI made.</p>
+    </div>
+
+    <div class="process5">
+      <img src="pro5.jpg" id="pro5">
+    </div>
+
+    <div class="des5">
+      <p>Since the AI will generate the same character in different cases during the collection, I also used a json file to merge different characters which are recognized, such that one character will be written in many different forms. In the next step, these characters that have multiple forms will be randomly selected and presented.</p>
+    </div>
+
+    <div class="process6">
+      <div id="sentence"></div>
+      <div class="in">
+        <input id="textInput" type="text" placeholder="Type in Pinyin">
+      </div>
+      <div class="clear">
+        <button type="button" id="clearStc">Clear</button>
+      </div>
+    </div>
+
+    <div class="des6">
+      <p>Now, it is time for you to try typing out the pinyin in the input box and see what form the character you want to type will appear in my work. Press the <span style='font-size:18px; font-weight:bold;'>"Clear"</span> button to empty the text box. (If there is a character that has not yet been collected in the database, it will be shown in its original form.)</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
