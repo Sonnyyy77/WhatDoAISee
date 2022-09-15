@@ -24,7 +24,7 @@ getData();
 
 function startScript(data){
   //
-  console.log(data)
+  console.log(data);
 
 
   inputbox.addEventListener('compositionend', (event) => {
