@@ -40,7 +40,7 @@ body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Ch
   /* transform: translate(-50%, 0); */
   /* background: #1abc9c; */
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Gideon Roman', cursive;
   margin-top: 150px;
   position:sticky;
